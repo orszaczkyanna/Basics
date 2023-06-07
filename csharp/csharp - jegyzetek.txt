@@ -1,0 +1,7 @@
+// GUI ListBox feltölése List<Valami>-ből
+lbValamik.Items.Clear();
+lbValamik.Items.AddRange(adatbazis.GetValamikLista().ToArray());
+
+// Adatbázisban ha null érték van
+dr.IsDBNull(dr.GetOrdinal("nev")) ? null : dr.GetString("nev"),
+dr.IsDBNull(dr.GetOrdinal("szam")) ? 0 : dr.GetInt32("szam"),

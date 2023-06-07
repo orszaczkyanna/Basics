@@ -1,0 +1,22 @@
+//Gyakori dependencies
+express mysql nodemon cors body-parser path ejs
+
+//Karakter kódolás
+headers: {"Content-Type": "application/json; charset=utf-8"}
+
+//Kártyák megjelenítése
+osszesKartya
+egyKartya
+egyKartyaTartalma
+
+<!--Form elemek egymás mellé-->
+<div class="form-group row mb-3">
+    <div class="col-sm-6">
+        <label for="id1" class="form-label">Valami1</label>
+        <input type="text" class="form-control" id="id1">
+    </div>
+    <div class="col-sm-6">
+        <label for="id2" class="form-label">Valami2</label>
+        <input type="text" class="form-control" id="id2">
+    </div>
+</div>
